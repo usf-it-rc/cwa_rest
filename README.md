@@ -22,7 +22,9 @@ dry up my code.  Hence:
     })
 
 Yes.  I was tired of converting Hash => JSON and vice-versa.  This little helper methods
-helped to clean up my code a bit.  Nothing fancy. 
+helped to clean up my code a bit.  Nothing fancy.  Returns a Hash from a JSON object.  
+Raises exceptions on various HTTP error codes or if it cannot convert the return body to
+JSON => Hash
 
 There are a couple of other helper methods for encrypting and decrypting AES since this
 code is primary used for a password-syncing back-end tool.  I doubt anyone else will
