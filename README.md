@@ -1,25 +1,25 @@
-= cwa_rest
+# cwa_rest
 
 A very simple REST client used by the CWA (Cluster Web Access) interface
 
-== Another REST client?
+## Another REST client?
 
 Yep.  All I needed was the ability to GET, POST, DELETE JSON objects and I wanted to
-dry up my code.  Hence
+dry up my code.  Hence:
 
-CwaRest.client({
-  :verb => :POST,
-  :url  => "https://host.example.com/blah",
-  :user => "my_user",
-  :password => "my_password",
-  :json => {
-    'param1' => 'value',
-    'param2' => 'value', 
-    'param3' => {
-      'subparam1' => 'value'
-    }
-  }
-})
+    CwaRest.client({
+      :verb => :POST,
+      :url  => "https://host.example.com/blah",
+      :user => "my_user",
+      :password => "my_password",
+      :json => {
+        'param1' => 'value',
+        'param2' => 'value', 
+        'param3' => {
+          'subparam1' => 'value'
+        }
+      }
+    })
 
 Yes.  I was tired of converting Hash => JSON and vice-versa.  This little helper methods
 helped to clean up my code a bit.  Nothing fancy. 
