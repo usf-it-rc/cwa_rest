@@ -30,5 +30,5 @@ module CwaConfig
 end
 
 CwaConfig.config do
-  parameter :msg_url, :msg_user, :msg_pass, :msg_aes_key, :ipa_url, :ipa_user, :ipa_pass
+  parameter :msg_url, :msg_user, :msg_pass, :msg_aes_key, :ipa_url, :ipa_user, :ipa_pass, :redmine_db_user, :redmine_db_host, :redmine_db_pass, :arco_db_user, :arco_db_host, :arco_db_pass
 end
