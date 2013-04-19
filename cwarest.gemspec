@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'cwa_rest'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2013-02-25'
   s.summary     = "Simple REST client for CWA"
   s.description = "The CWA REST client allows you to easily interface with outside REST services"
